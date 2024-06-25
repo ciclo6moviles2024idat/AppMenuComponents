@@ -19,7 +19,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             AppMenuComponentsTheme {
-                EjemploScaffold()
+                EjemploDrawer()
             }
         }
     }
@@ -30,7 +30,5 @@ class MainActivity : ComponentActivity() {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    AppMenuComponentsTheme {
-
-    }
+    EjemploDrawer()
 }
