@@ -61,6 +61,7 @@ fun EjemploDrawer() {
     val scope = rememberCoroutineScope()
     val estado = rememberDrawerState(DrawerValue.Closed)
     ModalNavigationDrawer(
+        modifier = Modifier.fillMaxSize(),
         drawerState = estado,
         drawerContent = {
             Column(Modifier.fillMaxSize().background(Color.White).systemBarsPadding()) {
